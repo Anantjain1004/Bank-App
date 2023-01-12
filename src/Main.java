@@ -9,6 +9,7 @@ public class Main {
         String password = sc.nextLine();
         double balance = sc.nextDouble();
         SBIUser user = new SBIUser(name,balance,password);
+        System.out.println("The account of new SBI Account is" + user.getAccountNo());
 
         //add amount
         System.out.println("Add money");
@@ -28,7 +29,7 @@ public class Main {
 
         //rate of interest
 //        System.out.println("Rate of Interest: " + user.calculateInterest(10));
-        System.out.println("Rate of Interest: " + user.calculateInterest(10));
+        System.out.println("The interest for 10 years on " +user.getBalance()+ " Rs will be: " + user.calculateInterest(10));
 
 
 
