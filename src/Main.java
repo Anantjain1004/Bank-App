@@ -23,10 +23,14 @@ public class Main {
         String pass = sc.next();
         System.out.println(user.withdrawMoney(money,pass));
 
-        //rate of interest
-        System.out.println("Rate of Interest: " + user.calculateInterest(10));
-
         //check balance
         System.out.println("Remaining Balance: " + user.checkBalance());
+
+        //rate of interest
+//        System.out.println("Rate of Interest: " + user.calculateInterest(10));
+        System.out.println("Rate of Interest: " + user.calculateInterest(10));
+
+
+
     }
 }
